@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: 0.5s;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  transition: 0.5s;
+  height: 80px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+  padding-top: 25px;
+  margin-bottom: 50px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav h1 {
+  color: rgb(17, 21, 23);
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+header nav .night-mode {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(17, 21, 23);
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+main .into-wrapper {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+main .into-wrapper .img-side img {
+  transition: 0.5s;
+  width: 560px;
+  height: 400px;
+  border: 1px solid rgb(147, 147, 147);
+  border-radius: 5px;
+}
+main .into-wrapper .about-side {
+  transition: 0.5s;
+}
+main .into-wrapper .about-side h2 {
+  color: rgb(0, 0, 0);
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+main .into-wrapper .about-side p {
+  color: rgb(0, 0, 0);
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+main .into-wrapper .about-side p span {
+  font-weight: 700;
+}
+
+.back {
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 135px;
+  height: 40px;
+  position: absolute;
+  top: 150px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.29);
+  background: rgb(255, 255, 255);
+  color: rgb(17, 21, 23);
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  cursor: pointer;
+}
+.back img {
+  transition: 0.5s;
+}
+
+.back:hover {
+  background-color: rgba(189, 189, 189, 0.5098039216);
+  transition: 0.3s;
+}
+
+.night-mode {
+  width: 130px;
+  border: 1px solid rgb(147, 147, 147);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.night-mode:hover {
+  background-color: rgba(189, 189, 189, 0.5098039216);
+  transition: 0.3s;
+}
+
+.dark {
+  background-color: #202C36;
+  transition: 0.3s;
+}
+.dark header {
+  background-color: #2B3844;
+  transition: 0.3s;
+}
+.dark header h1 {
+  color: white;
+}
+.dark header .night-mode {
+  color: white;
+}
+
+.dark-main .into-wrapper .about-side {
+  transition: 0.3s;
+}
+.dark-main .into-wrapper .about-side h2 {
+  color: white;
+}
+.dark-main .into-wrapper .about-side p {
+  color: white;
+}
+.dark-main .into-wrapper .about-side span {
+  color: white;
+}
+.dark-main .into-wrapper .img-side img {
+  transition: 0.3s;
+}
+
+.dark-back {
+  background-color: #2B3844;
+  transition: 0.3s;
+  color: white;
+}
+.dark-back img {
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  header {
+    height: 80px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding-top: 25px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav h1 {
+    font-family: Nunito Sans;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  header nav .night-mode {
+    display: flex;
+    align-items: center;
+    width: 110px;
+    gap: 8px;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  main .into-wrapper {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+  main .into-wrapper .img-side img {
+    transition: 0.5s;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgb(147, 147, 147);
+    border-radius: 5px;
+  }
+  main .into-wrapper .about-side {
+    transition: 0.5s;
+  }
+  main .into-wrapper .about-side .country-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  main .into-wrapper .about-side h2 {
+    color: rgb(0, 0, 0);
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  main .into-wrapper .about-side p {
+    color: rgb(0, 0, 0);
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  main .into-wrapper .about-side p span {
+    font-weight: 700;
+  }
+  .back {
+    width: 110px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 800px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  header {
+    height: 80px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding-top: 25px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav h1 {
+    font-family: Nunito Sans;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  header nav .night-mode {
+    display: flex;
+    align-items: center;
+    width: 110px;
+    gap: 8px;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  main .into-wrapper {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding-top: 120px;
+  }
+  main .into-wrapper .img-side img {
+    transition: 0.5s;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgb(147, 147, 147);
+    border-radius: 5px;
+  }
+  main .into-wrapper .about-side {
+    transition: 0.5s;
+  }
+  main .into-wrapper .about-side .country-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  main .into-wrapper .about-side h2 {
+    color: rgb(0, 0, 0);
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  main .into-wrapper .about-side p {
+    color: rgb(0, 0, 0);
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  main .into-wrapper .about-side p span {
+    font-weight: 700;
+  }
+  .back {
+    width: 110px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .container {
+    max-width: 380px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  header {
+    height: 60px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    transition: 0.5s;
+    padding-top: 15px;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav h1 {
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  header nav .night-mode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    gap: 5px;
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  main .into-wrapper {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 140px;
+  }
+  main .into-wrapper .img-side img {
+    transition: 0.5s;
+    width: 300px;
+    height: 250px;
+    border: 1px solid rgb(147, 147, 147);
+    border-radius: 5px;
+  }
+  main .into-wrapper .about-side {
+    transition: 0.5s;
+  }
+  main .into-wrapper .about-side .country-info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main .into-wrapper .about-side h2 {
+    color: rgb(0, 0, 0);
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  main .into-wrapper .about-side p {
+    color: rgb(0, 0, 0);
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  main .into-wrapper .about-side p span {
+    font-weight: 700;
+  }
+  .back {
+    width: 100px;
+    height: 35px;
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=into.css.map */
